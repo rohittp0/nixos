@@ -16,5 +16,5 @@ jobs:
         id: mirror
         uses: bridgelightcloud/github-mirror-action@v1
         with:
-          origin: 'TARGET_REPO_HERE'
+          origin: 'https://git.sinanmohd.com/nixos'
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
