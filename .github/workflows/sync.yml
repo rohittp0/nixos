@@ -2,7 +2,7 @@ name: Sync Upstream
 
 env:
   UPSTREAM_URL: "https://git.sinanmohd.com/nixos.git"
-  WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+  WORKFLOW_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
   UPSTREAM_BRANCH: "master"
   DOWNSTREAM_BRANCH: "main"
 
