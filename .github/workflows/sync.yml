@@ -11,6 +11,9 @@ on:
     - cron: '0 20 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -23,3 +26,4 @@ jobs:
           downstream_branch: ${{ env.DOWNSTREAM_BRANCH }}
           token: ${{ env.WORKFLOW_TOKEN }}
           push_args: "-f"
+          merge_args: "--allow-unrelated-histories"
