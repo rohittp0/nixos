@@ -22,3 +22,4 @@ jobs:
           upstream_branch: ${{ env.UPSTREAM_BRANCH }}
           downstream_branch: ${{ env.DOWNSTREAM_BRANCH }}
           token: ${{ env.WORKFLOW_TOKEN }}
+          push_args: "-f"
